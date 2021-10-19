@@ -21,7 +21,7 @@ int main()
 	}
 
 	//アドレスの生成
-	struct sockaddr_in addr;					   //接続先の情報用の構造体(ipv4)
+	struct sockaddr_in addr;//接続先の情報用の構造体(ipv4)
 	memset(&addr, 0, sizeof(struct sockaddr_in));  
 	addr.sin_family = AF_INET;					   
 	addr.sin_port = htons(50000);				   
